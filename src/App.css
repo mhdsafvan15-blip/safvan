@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Global Cyan/Teal Blue Scrollbar Theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00d4ff #0a1a1f;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1a1f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d4ff;
+  border-radius: 3px;
+  border: 1px solid #0a1a1f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b4d8;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+}
+
+::-webkit-scrollbar-corner {
+  background: #0a1a1f;
+}
+
+/* Horizontal scrollbar specific */
+::-webkit-scrollbar-track:horizontal {
+  background: #0a1a1f;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #00d4ff;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #00b4d8;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

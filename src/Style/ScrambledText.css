@@ -1,0 +1,12 @@
+/* ScrambledText.css */
+.text-block {
+  max-width: 800px;
+  font-family: "Fira Code", monospace;
+  font-size: clamp(14px, 4vw, 32px);
+  color: #fff;
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}

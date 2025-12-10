@@ -1,0 +1,128 @@
+/* About.css */
+.about-section {
+  background-color: #0a1a1f;
+  top: 0;
+  left: 0;
+  min-height: 90vh;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  font-family: "Fira Code", monospace;
+  padding: 30px 0 0 0;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.about {
+  position: relative;
+  padding-left: 50px;
+  color: white;
+  font-family: "Fira Code", monospace;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-me-title {
+  margin-bottom: 70px;
+  margin-top: 20px;
+  font-family: "Fira Code", monospace;
+  font-size: 2.5rem;
+  font-weight: 550;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.about h2 span {
+  color: #00d4ff;
+}
+
+.about-me {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-image {
+  display: inline-block;
+}
+
+.about-image img {
+  width: 400px;
+  height: 400px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .about-image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .about-me,
+  .about-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .about-me p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-section {
+    padding: 40px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

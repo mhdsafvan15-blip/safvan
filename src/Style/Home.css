@@ -1,0 +1,248 @@
+/* Home.css */
+.home-section {
+  background-image: url("../image/home-bg.jpg");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  font-family: "Fira Code", monospace;
+  padding: 30px 0;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+.home-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.display-name {
+  flex: 1;
+}
+
+.display-name h2 {
+  font-size: 3rem;
+  color: white;
+  font-family: "Fira Code", monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.min-image {
+  flex: 1;
+  text-align: center;
+}
+
+.min-image img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.intro-min {
+  flex: 1;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Fira Code", monospace;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.intro p {
+  color: #ccc;
+  font-family: "Fira Code", monospace;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.avatar {
+  flex: 1;
+  text-align: center;
+}
+
+.avatar img {
+  width: 400px;
+  height: 400px;
+}
+
+/* Text styling */
+.text-line {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.name-highlight {
+  color: #00d4ff;
+  display: inline-block;
+}
+
+.name-highlight span {
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.display-name h2 span {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Enhanced hover effects for images */
+.min-image img {
+  transition: filter 0.3s ease;
+}
+
+.min-image:hover img {
+  filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
+}
+
+.avatar img {
+  transition: filter 0.3s ease;
+}
+
+.avatar:hover img {
+  filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .min-image img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .avatar img {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .display-name h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .name,
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .display-name h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .min-image img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .avatar img {
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+  }
+  
+  .intro p {
+    width: 100%;
+  }
+  
+  .home-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-name h2 {
+    font-size: 1.8rem;
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+  }
+  
+  .min-image img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .avatar img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-name h2 {
+    font-size: 1.5rem;
+  }
+  
+  .intro h2 {
+    font-size: 1.6rem;
+  }
+  
+  .min-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .avatar img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .name,
+  .intro {
+    padding: 30px 15px;
+  }
+  
+  .home-section {
+    padding: 40px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

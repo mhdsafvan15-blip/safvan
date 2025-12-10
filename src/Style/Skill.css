@@ -1,0 +1,245 @@
+/* Skill.css */
+.main-bg {
+  background-color: #0a1a1f;
+  top: 0;
+  left: 0;
+  height: 180vh;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  font-family: "Fira Code", monospace;
+  background-size: cover;
+}
+
+.contributions-section {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  padding-bottom: 100px;
+}
+
+.contributions-title {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 60px;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contributions-title span {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.calendar-container {
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.calendar-grid {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.week-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.contribution-day {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.contribution-day:hover {
+  transform: scale(1.3);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.calendar-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00d4ff;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.legend-colors {
+  display: flex;
+  gap: 3px;
+}
+
+.legend-color {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+}
+
+.loading {
+  color: white;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.error-message {
+  background: rgba(255, 107, 107, 0.2);
+  border: 1px solid rgba(255, 107, 107, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.skills-section {
+  padding: 150px 20px 40px;
+  text-align: center;
+}
+
+.skills-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.skills-title span {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  font-family: "Fira Code", monospace;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  -webkit-backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(1.5px);
+  border: 1px solid #00d4ff;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+  border-color: rgba(0, 212, 255, 0.5);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.2);
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contributions-section {
+    padding: 20px 10px;
+  }
+
+  .contributions-title {
+    font-size: 2rem;
+  }
+
+  .calendar-container {
+    padding: 20px 15px;
+  }
+
+  .calendar-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-section {
+    padding: 60px 20px 30px;
+  }
+  
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-item {
+    padding: 25px 15px;
+    font-size: 1rem;
+  }
+  
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .skill-item {
+    padding: 20px 10px;
+  }
+  
+  .skill-icon {
+    font-size: 2rem;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+  }
+}
