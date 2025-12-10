@@ -1,8 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import '../Style/Home.css';
-import StarsBackground from './StarsBackground';  
+import React from "react";
+import { motion } from "framer-motion";
+import "../Style/Home.css";
+import StarsBackground from "./StarsBackground";
 import homeImg from "../image/home-main.svg";
+
 const Home = () => {
   // Animation variants
   const containerVariants = {
@@ -11,9 +12,9 @@ const Home = () => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -24,9 +25,9 @@ const Home = () => {
       transition: {
         type: "spring",
         stiffness: 120,
-        damping: 10
-      }
-    }
+        damping: 10,
+      },
+    },
   };
 
   const textVariants = {
@@ -37,9 +38,9 @@ const Home = () => {
       transition: {
         type: "spring",
         stiffness: 100,
-        duration: 0.8
-      }
-    }
+        duration: 0.8,
+      },
+    },
   };
 
   const imageVariants = {
@@ -51,17 +52,17 @@ const Home = () => {
       transition: {
         type: "spring",
         stiffness: 100,
-        duration: 1
-      }
+        duration: 1,
+      },
     },
     hover: {
       scale: 1.05,
       transition: {
         type: "spring",
         stiffness: 400,
-        damping: 10
-      }
-    }
+        damping: 10,
+      },
+    },
   };
 
   const wordVariants = {
@@ -71,29 +72,26 @@ const Home = () => {
       y: 0,
       transition: {
         type: "spring",
-        stiffness: 100
-      }
-    }
+        stiffness: 100,
+      },
+    },
   };
 
   // Split text by words instead of letters
   const hiWords = ["Hi", "There!"];
   const imWords = ["I'M"];
-  const nameWords = ["NAHEEL", "MUHAMMED", "PK"];
+  const nameWords = ["MUHAMMED", "SAFVAN"];
 
   return (
     <div className="home-section" id="home">
       <StarsBackground />
-      <motion.div 
+      <motion.div
         className="name"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.div 
-          className="display-name"
-          variants={textVariants}
-        >
+        <motion.div className="display-name" variants={textVariants}>
           <motion.h2>
             {/* Animate "Hi There!" word by word */}
             <motion.div className="text-line">
@@ -101,53 +99,50 @@ const Home = () => {
                 <motion.span
                   key={`hi-${index}`}
                   variants={wordVariants}
-                  style={{ display: 'inline-block', marginRight: '8px' }}
-                  whileHover={{ 
-                    scale: 1.1, 
-                    color: index === 0 ? "white" : "#9d4edd",
+                  style={{ display: "inline-block", marginRight: "8px" }}
+                  whileHover={{
+                    scale: 1.1,
+                    color: index === 0 ? "white" : "#00d4ff", // Changed to cyan
                     y: -3,
-                    transition: { type: "spring", stiffness: 500 }
+                    transition: { type: "spring", stiffness: 500 },
                   }}
                 >
                   {word}
                 </motion.span>
               ))}
             </motion.div>
-            
+
             {/* Animate "I'M" and name */}
             <motion.div className="text-line">
               {imWords.map((word, index) => (
                 <motion.span
                   key={`im-${index}`}
                   variants={wordVariants}
-                  style={{ display: 'inline-block', marginRight: '8px' }}
-                   whileHover={{ 
-                    scale: 1.1, 
-                    color: index === 0 ? "white" : "#9d4edd",
+                  style={{ display: "inline-block", marginRight: "8px" }}
+                  whileHover={{
+                    scale: 1.1,
+                    color: index === 0 ? "white" : "#00d4ff", // Changed to cyan
                     y: -3,
-                    transition: { type: "spring", stiffness: 500 }
+                    transition: { type: "spring", stiffness: 500 },
                   }}
                 >
                   {word}
                 </motion.span>
               ))}
-              
+
               {/* Animate name with different color */}
-              <motion.span 
-                className="name-highlight"
-                variants={wordVariants}
-              >
+              <motion.span className="name-highlight" variants={wordVariants}>
                 {nameWords.map((word, index) => (
                   <motion.span
                     key={`name-${index}`}
                     variants={wordVariants}
-                    style={{ display: 'inline-block', marginRight: '8px' }}
-                    whileHover={{ 
-                      scale: 1.1, 
-                      color: "#9d4edd",
+                    style={{ display: "inline-block", marginRight: "8px" }}
+                    whileHover={{
+                      scale: 1.1,
+                      color: "#00d4ff", // Changed to cyan
                       y: -3,
-                      textShadow: "0 0 10px rgba(157, 78, 221, 0.8)",
-                      transition: { type: "spring", stiffness: 500 }
+                      textShadow: "0 0 10px rgba(0, 212, 255, 0.8)", // Cyan glow
+                      transition: { type: "spring", stiffness: 500 },
                     }}
                   >
                     {word}
@@ -158,7 +153,7 @@ const Home = () => {
           </motion.h2>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="min-image"
           variants={imageVariants}
           whileHover="hover"
@@ -166,48 +161,41 @@ const Home = () => {
           <img src={homeImg} alt="Developer" />
         </motion.div>
       </motion.div>
-      
-      <motion.div 
+
+      <motion.div
         className="intro"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <motion.div 
-          className="intro-min"
-          variants={itemVariants}
-        >
-          <motion.h2 
+        <motion.div className="intro-min" variants={itemVariants}>
+          <motion.h2
             variants={itemVariants}
-            whileHover={{ 
-              scale: 1.05, 
-              color: "#9d4edd",
-              textShadow: "0 0 10px rgba(157, 78, 221, 0.5)"
+            whileHover={{
+              scale: 1.05,
+              color: "#00d4ff", // Changed to cyan
+              textShadow: "0 0 10px rgba(0, 212, 255, 0.5)", // Cyan glow
             }}
           >
             LET ME INTRODUCE MYSELF
           </motion.h2>
-          <motion.p 
-            variants={itemVariants}
-            whileHover={{ x: 10 }}
-          >
-            Hi! I'm Naheel, a passionate web developer with a knack for creating stunning and functional websites. Welcome to my portfolio!
+          <motion.p variants={itemVariants} whileHover={{ x: 10 }}>
+            Hi! I'm Safvan, a passionate Flutter developer with a knack for
+            building beautiful and high-performance mobile applications. Welcome
+            to my portfolio!{" "}
           </motion.p>
-          <motion.p 
-            variants={itemVariants}
-            whileHover={{ x: 10 }}
-          >
-            In this portfolio, you'll find a selection of my work, showcasing my skills in front-end and back-end development. I'm always eager to learn new technologies and improve my craft.
+          <motion.p variants={itemVariants} whileHover={{ x: 10 }}>
+            In this portfolio, you'll find a selection of my work, showcasing my
+            skills in Flutter development, UI/UX design, and cross-platform app
+            solutions. I'm always eager to explore new technologies and improve
+            my craft.{" "}
           </motion.p>
-          <motion.p 
-            variants={itemVariants}
-            whileHover={{ x: 10 }}
-          >
+          <motion.p variants={itemVariants} whileHover={{ x: 10 }}>
             Feel free to explore and reach out if you'd like to collaborate!
           </motion.p>
         </motion.div>
-        <motion.div 
+        <motion.div
           className="avatar"
           variants={imageVariants}
           whileHover="hover"

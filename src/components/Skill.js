@@ -192,11 +192,11 @@ export class Skill extends Component {
 
   getColor = (count) => {
     if (count === 0) return "rgba(255, 255, 255, 0.1)";
-    if (count === 1) return "#b19cd9";
-    if (count === 2) return "#8a2be2";
-    if (count === 3) return "#6a0dad";
-    return "#4b0082";
-  };
+    if (count === 1) return "#80e5ff";  // Light cyan
+    if (count === 2) return "#00d4ff";  // Bright cyan
+    if (count === 3) return "#00a8cc";  // Medium teal
+    return "#0077b6";                   // Dark teal blue
+};
 
   render() {
     const { contributions, loading, totalContributions, error } = this.state;

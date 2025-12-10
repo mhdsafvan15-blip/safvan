@@ -4,7 +4,7 @@ import StarsBackground from "./StarsBackground";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 
-emailjs.init("VLxM2t4JmL7HsMc4F");
+emailjs.init("QGS5M-l4D22imH3Bv");
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -25,8 +25,8 @@ function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const serviceID = "service_6kxz2ig";
-    const templateID = "template_qd8leoi";
+    const serviceID = "service_fzxbhy9";
+    const templateID = "template_1uxasla";
 
     const templateParams = {
       from_name: formData.name,
@@ -188,7 +188,7 @@ function Contact() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <span className="contact-label">📧 Email: </span>
-                <span className="contact-value">naheelmuhammedpk@gmail.com</span>
+                <span className="contact-value">safvanmuhammed@gmail.com</span>
               </motion.div>
               <motion.div 
                 className="contact-item"
