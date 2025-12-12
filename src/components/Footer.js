@@ -10,7 +10,7 @@ export default function Footer() {
                   <p>&copy; {new Date().getFullYear()} Naheel. Built with React.</p>
                   <div className="footer-simple-links">
                     <a
-                      href="https://github.com/naheel0"
+                      href="https://github.com/mhdsafvan15-blip"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="GitHub"
@@ -26,7 +26,7 @@ export default function Footer() {
                       <FaLinkedin />
                     </a>
                     <a
-                      href="mailto:naheelmuhammedpk@gmail.com"
+                      href="mailto:safvanmuhammed@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Email"

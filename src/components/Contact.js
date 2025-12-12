@@ -174,8 +174,7 @@ function Contact() {
               If you have any questions or would like to collaborate, feel free
               to reach out!
             </motion.p>
-            
-            {/* Additional contact info with animations */}
+          
             <motion.div 
               className="contact-details"
               initial={{ opacity: 0 }}
