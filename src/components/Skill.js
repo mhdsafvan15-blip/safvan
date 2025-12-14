@@ -215,7 +215,6 @@ export class Skill extends Component {
       { name: "Redux", icon: < SiFlutter  />, color: "#764ABC" },
     ];
 
-    // Animation variants
     const containerVariants = {
       hidden: { opacity: 0 },
       visible: {
@@ -273,7 +272,7 @@ export class Skill extends Component {
         opacity: 1,
         scale: 1,
         transition: {
-          delay: custom * 0.003, // Stagger based on index
+          delay: custom * 0.003, 
           type: "spring",
           stiffness: 200,
           damping: 20
