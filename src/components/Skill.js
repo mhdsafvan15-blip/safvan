@@ -212,7 +212,7 @@ export class Skill extends Component {
       { name: "CSS", icon: <FaCss3Alt />, color: "#1572B6" },
       { name: "Dart", icon: <SiDart />, color: "#61DAFB" },
       { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
-      { name: "Redux", icon: < SiFlutter  />, color: "#764ABC" },
+      { name: "Flutter", icon: <SiFlutter />, color: "#764ABC" },
     ];
 
     const containerVariants = {

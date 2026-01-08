@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link className="navbar-brand" to="/">
-          Nm.
+          Sm.
         </Link>
 
         {/* Toggler (Mobile) */}
