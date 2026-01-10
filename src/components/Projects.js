@@ -3,7 +3,6 @@ import "../Style/Projects.css";
 import StarsBackground from "./StarsBackground";
 import { motion } from "framer-motion";
 
-// Import your images
 import just from "../image/just.jpg";
 import fb from "../image/fb.png";
 import nav from "../image/nav-bar.jpg";
@@ -11,7 +10,6 @@ import gamehub from "../image/gamehub.png";
 import weatherApp from "../image/weather-app.png";
 
 function Projects() {
-  // Project data array
   const projects = [
     {
       id: 1,

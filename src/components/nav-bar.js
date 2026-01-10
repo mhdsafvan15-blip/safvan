@@ -6,7 +6,6 @@ import "../Style/nav-bar.css";
 const Navbar = () => {
   const location = useLocation();
 
-  // Navbar entrance animation
   const navVariants = {
     hidden: { opacity: 0, y: -50 },
     visible: {
@@ -16,7 +15,6 @@ const Navbar = () => {
     }
   };
 
-  // Item fade-up animation
   const itemVariants = {
     hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0 }

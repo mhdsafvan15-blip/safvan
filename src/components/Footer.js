@@ -18,7 +18,7 @@ export default function Footer() {
                       <FaGithub />
                     </a>
                     <a
-                      href="https://linkedin.com/in/naheel-muhammad-6b7077378"
+                      href="https://linkedin.com/in/mhdsafvan15"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="LinkedIn"
