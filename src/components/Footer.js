@@ -7,7 +7,7 @@ export default function Footer() {
       
               <footer className="footer-simple">
                 <div className="footer-simple-content">
-                  <p>&copy; {new Date().getFullYear()} Naheel. Built with React.</p>
+                  <p>&copy; {new Date().getFullYear()} Safvan. Built with React.</p>
                   <div className="footer-simple-links">
                     <a
                       href="https://github.com/mhdsafvan15-blip"
@@ -18,7 +18,7 @@ export default function Footer() {
                       <FaGithub />
                     </a>
                     <a
-                      href="https://linkedin.com/in/mhdsafvan15"
+                      href="https://www.linkedin.com/in/muhammed-safvan-90b508385"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="LinkedIn"
@@ -26,7 +26,7 @@ export default function Footer() {
                       <FaLinkedin />
                     </a>
                     <a
-                      href="mailto:safvanmuhammed@gmail.com"
+                      href="mailto:mhdsafvan15@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Email"
