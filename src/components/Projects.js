@@ -4,56 +4,46 @@ import StarsBackground from "./StarsBackground";
 import { motion } from "framer-motion";
 
 import just from "../image/just.jpg";
-import fb from "../image/fb.png";
 import nav from "../image/nav-bar.jpg";
-import gamehub from "../image/gamehub.png";
-import weatherApp from "../image/weather-app.png";
+import filkart from "../image/filkart.jpeg";
+import studentManagement from "../image/std.jpeg";
 
 function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Gamehub",
-      description: "A gaming e-commerce website built with React.js and Tailwind CSS.",
-      image: gamehub,
-      githubUrl: "https://github.com/naheel0/gamehub",
-      demoUrl: "https://gamehub-alpha-rose.vercel.app",
-      technologies: ["React.js", "Tailwind CSS", "JavaScript"]
+      title: "Flipkart Clone UI",
+      description: "A Flipkart clone UI built using Flutter framework.",
+      image: filkart,
+      githubUrl: "https://github.com/mhdsafvan15-blip/Flipkart-Clone-Ui",
+      demoUrl: "",
+      technologies: ["dart", "Flutter"]
     },
     {
       id: 2,
       title: "justDial",
       description: "A clone of JustDial website built with HTML, CSS, and JavaScript.",
       image: just,
-      githubUrl: "https://github.com/naheel0/justdial-clone",
-      demoUrl: "https://naheel0.github.io/justdial-clone/",
+      githubUrl: "https://github.com/mhdsafvan15-blip/justdial_clone",
+      demoUrl: "https://mhdsafvan15-blip.github.io/justdial_clone/",
       technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
       id: 3,
-      title: "weather App",
-      description: "A weather application that provides current weather information using  API.",
-      image: weatherApp,
-      githubUrl: "https://github.com/naheel0/react-weather-app",
-      demoUrl: "https://naheel0.github.io/react-weather-app/",
-      technologies: ["React.js", "API","Tailwind CSS", "JavaScript"]
+      title: "Student Management System",
+      description: "A student management system built with Flutter.",
+      image: studentManagement,
+      githubUrl: "https://github.com/mhdsafvan15-blip/student-management",
+      demoUrl: "",
+      technologies: ["dart", "Flutter"]
     },
     {
       id: 4,
       title: "W3 School Navbar",
       description: "A responsive navigation bar built with HTML, CSS, and JavaScript.",
       image: nav,
-      githubUrl: "https://github.com/naheel0/w3school-nav-bar",
-      demoUrl: "https://naheel0.github.io/w3school-nav-bar/",
-      technologies: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      id: 5,
-      title: "Facebook Clone",
-      description: "A clone of Facebook homepage built with HTML, CSS, and JavaScript.",
-      image: fb,
-      githubUrl: "https://github.com/naheel0/facebook-login-clone",
-      demoUrl: "https://naheel0.github.io/facebook-login-clone/",
+      githubUrl: "https://github.com/mhdsafvan15-blip/w3school_navigation",
+      demoUrl: "https://mhdsafvan15-blip.github.io/w3school_navigation/",
       technologies: ["HTML", "CSS", "JavaScript"]
     },
   ];  
